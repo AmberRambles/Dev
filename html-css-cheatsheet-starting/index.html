@@ -1,0 +1,137 @@
+<!--Instructions: 
+Your project should document at least one HTML or CSS topic. In our example project, we documented the tags and attributes used in HTML tables layouts, but you can choose any HTML or CSS topic that you’ve learned so far—the sky is the limit!
+
+Possible topics could be:
+
+HTML Tables
+Other HTML tags
+CSS selectors and specificity
+Common CSS properties
+If you choose to document HTML tags, open the hint to see how to include HTML tags as text in your code.
+
+
+Your site uses HTML tables to display the documentation. Be sure to label the columns in your HTML.
+
+In our example site, we used tables with columns for:
+
+The tag or attribute name
+The actual formatted tag (eg. <table>)
+A description of what to use the tag for.
+You can use these same columns or choose your own.
+
+Your site should utilize a custom color scheme. You can use any of the named CSS colors.
+
+Your site should use custom styles for any code such as HTML tags (like <h1>) or CSS properties or values (like font-family). Represent code using a monospace font family and a different background color.
+    
+
+Great work! Visit our forums to compare your project to our sample solution code. You can also learn how to host your own solution on GitHub so you can share it with other learners!
+
+Your solution might look different from ours, and that’s okay! There are multiple ways to solve these projects, and you’ll learn more by seeing others’ code.
+
+If you’d like to extend your cheat sheet, keep adding new topics to it as you continue to learn more HTML, CSS, and more. As you become more advanced with CSS, you’ll also be able to improve the styling and layout of the cheat sheet itself.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <title>HTML CheatSheet</title>
+</head>
+<body>
+    <header><h1>Common HTML Tags and Usage</h1></header>
+    <table>
+        <thead><tr>
+            <th>Tag</th>
+            <th>Description</th>
+            <th>Usage</th>
+            <th>Output (if any)</th>
+        </tr></thead>
+        <tr>
+            <td class="code">&lt;!--***--&gt;</td>
+            <td>Comment (where *** is your comment)</td>
+            <td class="code">&lt;!--Example comment--&gt;</td>
+            <td>(N/A)</td>
+        </tr>
+        <tr>
+            <td class="code">&lt;!DOCTYPE *&gt;</td>
+            <td>Lets your browser know what to expect</td>
+            <td class="code">&lt;!DOCTYPE html&gt;</td>
+            <td>(N/A)</td>
+        </tr>
+        <tr>
+            <td class="code">&lt;html&gt;</td>
+            <td>ALL of your HTML code should be between these tags.</td>
+            <td class="code">&lt;html&gt;&lt;head&gt;&lt;title&gt;Example Title&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;Hello World.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</td>
+            <td><p>Hello World.</p></td>
+        </tr>
+        <tr>
+            <td class="code">&lt;head&gt;</td>
+            <td>Metadata goes here! (non-printing html code)</td>
+            <td class="code">&lt;head&gt;&lt;title&gt;Another Example&lt;/title&gt;&lt;/head&gt;</td>
+            <td>(N/A)</td>
+        </tr>
+         <tr>
+             <td class="code">&lt;body&gt;</td>
+             <td>Your webpage's (visible) content goes here!</td>
+             <td class="code">&lt;body&gt;&lt;p&gt;Hello World.&lt;/p&gt;&lt;/body&gt;</td>
+             <td><p>Hello World.</p></td>
+         </tr>
+         <tr>
+             <td class="code">&lt;h1&gt;</td>
+             <td>Heading #1 - This is the most important/relevent heading element</td>
+             <td class="code">&lt;h1&gt;LOLCats - THE Place to See Pictures of Cats on the Internet!&lt;/h1&gt;</td>
+             <td><h1>LOLCats - THE Place to See Pictures of Cats on the Internet!</h1></td>
+         </tr>
+         <tr>
+             <td class="code">&lt;h2-h6&gt;</td>
+             <td colspan="2">Headings go down in importance  from 2 through 6, usage is the same. NOTE: Although size <em>tends</em> to decrease from h1 to h6, the more actual usage of these elements is to set <strong>the degree of import of the heading relative to the webpage</strong> for users with screenreaders. Normally font size and style is handled through CSS</td>
+             <td class="inlineMe"><h2>h2</h2>  <h3>h3</h3>  <h4>h4</h4>  <h5>h5</h5>  <h6>h6</h6></td>
+         </tr>
+         <tr>
+             <td class="code">&lt;em&gt;</td>
+             <td>Em, here, is short for emphatic. Text within these tags will appear italic</td>
+             <td class="code">Do you even &lt;em&gt;like&lt;/em&gt; me?</td>
+             <td>Do you even <em>like</em> me?</td>
+         </tr>
+         <tr>
+             <td class="code">&lt;strong&gt;</td>
+             <td>Text within the strong tags will appear bold.</td>
+             <td class="code">Do you even like &lt;strong&gt;me&lt;/strong&gt;?</td>
+             <td>Do you even like <strong>me</strong>?</td>
+         </tr>
+         <tr>
+             <td class="code">&lt;p&gt;</td>
+             <td>Short for paragraph, p is used for normal text.</td>
+             <td class="code">&lt;p&gt;Hello World.&lt;/p&gt;</td>
+             <td><p>Hello World.</p></td>
+         </tr>
+         <tr>
+            <td class="code">&lt;link href='local or remote URL to link' rel='how the document relates to this one'&gt;</td>
+            <td>This will link documents to your webpage. Needed to link CSS stylesheets, fonts, etc. when they are in separate documents.</td>
+            <td class="code">&lt;link href='style.css' rel='stylesheet'&gt;</td>
+            <td>(N/A)</td>
+        </tr>
+        <tr>
+            <td class="code">&lt;br&gt;</td>
+            <td>Inserts a line break</td>
+            <td class="code">&lt;p&gt;What happened to &lt;br&gt; this sentence?&lt;/p&gt;</td>
+            <td><p>What happened to <br> this sentence?</p></td>
+        </tr>
+        <tr>
+            <td class="code">&lt;img src="path.jpg" alt="Alt text for screenreaders" width="600" height="800"&gt;</td>
+            <td>Adds image element with specified dimensions. Text in the alt property will be visible if the img src is unavailable or does not load.</td>
+            <td class="code">&lt;img src="https://en.wikipedia.org/static/images/project-logos/enwiki.png" alt="Wikipedia's Home Logo" width="100" height="100"&gt;</td>
+            <td><img src="https://en.wikipedia.org/static/images/project-logos/enwiki.png" alt="Wikipedia's Home Logo" width="100" height="100"></td>
+        </tr>
+         <!--<tr>
+             <td>&lt;html&gt;</td>
+             <td>definition</td>
+             <td>&lt;html&gt;stuff&lt;/html&gt;</td>
+             <td><html>stuff</html></td>
+         </tr>-->
+    </table>
+</body>
+</html>
