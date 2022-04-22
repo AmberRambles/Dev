@@ -74,7 +74,7 @@ header h1 {
     display: inline-block !important;
 }
 
-table .code {
+.code {
     font-family: monospace;
     color: greenyellow;
     background-color: rgb(139, 139, 139);
