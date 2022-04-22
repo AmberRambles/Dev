@@ -41,7 +41,14 @@ If you’d like to extend your cheat sheet, keep adding new topics to it as you 
     <title>HTML CheatSheet</title>
 </head>
 <body>
-    <header><h1>Common HTML Tags and Usage</h1></header>
+    <header>
+        <nav>
+            <a href="#commonHTML">Common HTML</a>
+            <a href="#tables">Tables</a>
+        </nav>
+        <h1>Amber's CheatSheet</h1>
+    </header>
+    <h2 id="commonHTML">Common HTML Tags and Usage</h2>
     <table>
         <thead><tr>
             <th>Tag</th>
@@ -132,6 +139,36 @@ If you’d like to extend your cheat sheet, keep adding new topics to it as you 
              <td>&lt;html&gt;stuff&lt;/html&gt;</td>
              <td><html>stuff</html></td>
          </tr>-->
+    </table>
+
+    <h2 id="tables">Tables in HTML</h2>
+    <p>There are several requirements for a "successful" table in HTML.</p>
+    <ol>
+        <li>Must be enclosed in &lt;table&gt; tags.</li>
+        <li>Tables have rows. So we tag our rows &lt;tr&gt;.</li>
+        <li>Rows contain cells. Cells contain data. We will shorten to 'table data' or &lt;td&gt;.</li>
+        <li>If we want descriptive headings, they (the whole 'tr') go in &lt;thead&gt;.</li>
+        <li>The headings themselves go in 'th' instead of 'td'</li>
+    </ol>
+    <p>Those are the essentials anyway. Collumns are added automatically by adding data to rows. If you want a cell to span more than one collumn, you must include colspan as a property within the 'td' with the # of collumns to span as the value.</p>
+    <h3>Code Example for Table</h3>
+    <p class="code">&lt;table&gt;<br>  &lt;thead&gt;</p>
+    <h3>How the example looks:</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tr>
+            <td>Tom Thumb</td>
+            <td>Example@notreal.com</td>
+        </tr>
+        <tr>
+            <td>Pallas Athena</td>
+            <td>summit@olympus.net</td>
+        </tr>
     </table>
 </body>
 </html>
