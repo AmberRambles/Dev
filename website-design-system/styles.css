@@ -1,3 +1,24 @@
+/* Font Declarations */
+@font-face {
+    font-family: "Dancing Script";
+    src: url("fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Indie Flower";
+    src: url("fonts/Indie_Flower/IndieFlower-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Pacifico";
+    src: url("fonts/Pacifico/Pacifico-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Water Brush";
+    src: url("fonts/Water_Brush/WaterBrush-Regular.ttf") format("truetype");
+}
+
 html { /*Global overrides*/
     background-color: azure;
 }
@@ -16,23 +37,119 @@ main {
     margin: 0px 15%;
 }
 
+p {
+    margin: 5px auto;
+}
+
+.color, .fonts {
+    border: 2px solid green;
+    margin-bottom: 2px;
+}
+
+.color h1, .fonts h1 {
+    margin-top: 2px;
+    text-decoration: underline;
+}
+
 .colorspace li {
     display: inline-block;
 }
 
 .colorspace td {
-    border: 1px solid red;
+    
     height: 100px;
-    width: 100px;
+    width: 150px;
 }
 
-#jasper {
-    background-color: rgb(50, 147, 37);
+.colorspace h5 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    margin-top: 20px;
 }
+
+.colorspace .nightfall td, #deepdark, #royalpurple, #bluelagoon, #offdark, #slate, #smoke {
+    color: yellow;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.fontbox {
+    display: inline-block;
+    border: 1px dashed black;
+    padding: 2px;
+    height: 190px;
+    width: 343px;
+    margin: 3px;
+}
+
+.fontbox h3{
+    margin-top: 1px;
+}
+
+.dancingscript {
+    font-family: "Dancing Script", cursive;
+}
+
+.indieflower{ font-family: "Indie Flower", monospace;}
+
+.pacifico{font-family: "Pacifico", monospace;}
+
+.waterbrush{font-family: "Water Brush", monospace;}
+
+#jasper {background-color: rgb(50, 147, 37);}
+
+#amber {background-color: rgb(214, 124, 28);}
+
+#bluelagoon{background-color: rgb(7, 89, 143);}
+
+#terracotta{background-color: rgb(191, 65, 11);}
+
+#downyyellow{background-color: rgb(247, 243, 124);}
+
+#softpink{background-color: rgb(252, 207, 252);}
+
+#skyblue{background-color: rgb(200, 233, 247);}
+
+#keylime{background-color: rgb(224, 250, 187);}
+
+#darknight{background-color: rgb(31, 31, 31);}
+
+#periwinkle{background-color: rgb(6, 6, 79);}
+
+#cloudgray{background-color: rgb(60, 60, 61);}
+
+#streetlamp{background-color: rgb(77, 70, 4);}
+
+#sailorsdelight{background-color: rgb(207, 27, 39);}
+
+#navalorange{background-color: rgb(242, 122, 24);}
+
+#divinelight{background-color: rgb(255, 230, 148);}
+
+#rosequartz{background-color: rgb(255, 196, 235);}
+
+#deepdark{background-color: rgb(0, 42, 140);}
+
+#seafoamgreen{background-color: rgb(51, 184, 111);}
+
+#royalpurple{background-color: rgb(140, 47, 194);}
+
+#planktonbay{background-color: rgb(53, 196, 175);}
+
+#offdark{background-color: rgb(33, 33, 33);}
+
+#slate{background-color: rgb(46, 46, 46);}
+
+#smoke{background-color: rgb(77, 77, 77);}
+
+#steam{background-color: rgb(148, 148, 148);}
 
 footer {
     position: relative;
     bottom: 0;
     background-color: #96ff6c;
     line-height: 1.5;
+    text-align: center;
 }
