@@ -1,12 +1,43 @@
 /* Font Declarations */
 @font-face {
+    font-family: "Abril Fatface";
+    src: url("fonts/Abril_Fatface/AbrilFatface-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Bitter";
+    src: url("fonts/Bitter/Bitter-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Bitter";
+    src: url("fonts/Bitter/Bitter-Italic-VariableFont_wght.ttf") format("truetype");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Comfortaa";
+    src: url("fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
     font-family: "Dancing Script";
     src: url("fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf") format("truetype");
 }
 
 @font-face {
+    font-family: "Fira Sans Condensed";
+    src: url("fonts/Fira_Sans_Condensed/FiraSansCondensed-Regular.ttf") format("truetype");
+}
+
+@font-face {
     font-family: "Indie Flower";
     src: url("fonts/Indie_Flower/IndieFlower-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Merriweather";
+    src: url("fonts/Merriweather/Merriweather-Regular.ttf") format("truetype");
 }
 
 @font-face {
@@ -17,6 +48,11 @@
 @font-face {
     font-family: "Water Brush";
     src: url("fonts/Water_Brush/WaterBrush-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Work Sans";
+    src: url("fonts/Work_Sans/WorkSans-VariableFont_wght.ttf") format("truetype");
 }
 
 html { /*Global overrides*/
@@ -30,7 +66,15 @@ body {
 header {
     background-color: #96ff6c;
     margin: 0px;
+    margin-bottom: 10px;
     font-size: 18pt;
+}
+
+header h3{
+    display: inline-block;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    margin-left: 13px;
 }
 
 main {
@@ -41,12 +85,12 @@ p {
     margin: 5px auto;
 }
 
-.color, .fonts {
+.boxy {
     border: 2px solid green;
-    margin-bottom: 2px;
+    margin-bottom: 10px;
 }
 
-.color h1, .fonts h1 {
+.boxy h1 {
     margin-top: 2px;
     text-decoration: underline;
 }
@@ -75,28 +119,61 @@ p {
     text-decoration: underline;
 }
 
+
 .fontbox {
     display: inline-block;
     border: 1px dashed black;
-    padding: 2px;
-    height: 190px;
-    width: 343px;
-    margin: 3px;
+    padding: 1px 5px;
+    margin: 5px 3px 0px 3px;
 }
 
 .fontbox h3{
     margin-top: 1px;
 }
 
+
+.abrilfatface{
+    font-family: "Abril Fatface", serif;
+}
+
+.bitter{
+    font-family: "Bitter, serif";
+}
+
+.comfortaa{
+    font-family: "Comfortaa", sans-serif;
+}
+
 .dancingscript {
     font-family: "Dancing Script", cursive;
+    font-size: larger;
+    letter-spacing: larger;
+}
+
+.firasanscondensed{
+    font-family: "Fira Sans Condensed", sans-serif;
 }
 
 .indieflower{ font-family: "Indie Flower", monospace;}
 
-.pacifico{font-family: "Pacifico", monospace;}
+.merriweather{
+    font-family: "Merriweather", serif;
+}
 
-.waterbrush{font-family: "Water Brush", monospace;}
+.pacifico{
+    font-family: "Pacifico", monospace;
+    letter-spacing: larger;
+}
+
+.waterbrush{
+    font-family: "Water Brush", monospace;
+    font-size: larger;
+    letter-spacing: larger;
+}
+
+.worksans{
+    font-family: "Work Sans", sans-serif;
+}
 
 #jasper {background-color: rgb(50, 147, 37);}
 
