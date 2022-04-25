@@ -148,8 +148,13 @@ p {
 
 footer {
     position: relative;
+    margin: 2px 0px 0px 0px;
     bottom: 0;
     background-color: #96ff6c;
     line-height: 1.5;
     text-align: center;
+}
+
+footer p {
+    margin-bottom: 0;
 }
