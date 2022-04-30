@@ -44,14 +44,19 @@ nav a {
 
 .mission {
     background-image: url("./images/img-mission-background.jpg");
-    margin: 69px 5% 40px 5%;
-    padding-right: 10px;
+    position: relative;
     display: flex;
+    flex-flow: column nowrap;
     height: 700px;
     width: 1200px;
-    flex-direction: column;
-    justify-content: center;
     align-content: center;
+    justify-content: center;
+    align-items: stretch;
+    margin-top: 69px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    align-self: center;
 }
 
 .box {
@@ -59,6 +64,34 @@ nav a {
 }
 
 .mission h2, h4 {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.hardbox{
+    width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.hardbox h2, h4 {
+    text-align: center;
+}
+
+.picflexbox {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: center;
+
+}
+
+.picflex img {
+    width: 300px;
+    height: 200px;
+}
+
+.picflex h3 {
     margin: 10px auto;
     text-align: center;
 }
