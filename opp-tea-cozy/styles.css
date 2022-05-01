@@ -24,6 +24,15 @@ header {
     z-index: 10;
 }
 
+h1 {
+    font-size: 26pt;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+h2 {
+    font-size: 22pt;
+}
+
 .logo img{
     height: 50px;
 }
@@ -49,6 +58,8 @@ nav a {
 
 .mission {
     background-image: url("./images/img-mission-background.jpg");
+    background-position: center;
+    background-size: cover;
     position: relative;
     display: flex;
     flex-flow: column nowrap;
@@ -89,7 +100,6 @@ nav a {
     justify-content: center;
     align-content: center;
     column-gap: 20px;
-
 }
 
 .picflex img {
@@ -104,11 +114,52 @@ nav a {
 
 .locations-flex {
     background-image: url("./images/img-locations-background.jpg");
+    background-position: center;
+    background-size: cover;
     width: 1200px;
     height: 500px;
     display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    column-gap: 40px;
+    
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .locations-flex h2 {
     text-align: center;
+    background-color: rgba(255, 255, 255, 0);
+    position: relative;
+    bottom: 180px;
+    left: 460px;
+    font-size: 22pt;
+    width: 0;
+}
+
+.location{
+    display: inline-flex;
+    flex-direction: column;
+    height: 300px;
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    line-height: 3;
+    opacity: 1;
+    text-align: center;
+}
+
+.contact {
+    display: flex;
+    flex-flow: column nowrap;
+    line-height: 3;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+footer h5 {
+    margin-left: 20px;
 }
