@@ -20,6 +20,43 @@
     <h2 class="blueBacking">The principle rule of CSS is that more specific rules will override more general rules.</h2>
     <div class="contentFrame">
         <p>This means that the CSS rule you make may not make it to the final viewer, if it gets overridden. One workaround is to add !important to the end of a CSS property declaration. Another is to modify your rule to use a more specific selector (or set of selectors).</p>
+        <p>Another common issue (that I run into) is that certain HTML elements will inherit properties from their container or may pull default properties from a user-agent (web-browser) stylesheet. This may result in an HTML element that does not look as you may expect. (margins magically appearing where they should not) You can use browser dev tools to confirm the issue before implimenting a fix.</p>
+    </div>
+    <h2 class="blueBacking">Selectors</h2>
+    <div class="contentFrame">
+        <p>In CSS, we can access elements using selectors. Selectors allow us to set rules for many elements at once. The order and specificity of the selector determine the scope of how the rules are applied.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Selector</th>
+                    <th>Example of the element in HTML</th>
+                    <th>The Default Behavior</th>
+                    <th>Example of the selector in CSS</th>
+                    <th>The Result</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>tag</td>
+                <td class="code">&lt;html&gt;<br>...<br>&lt;/html&gt;</td>
+                <td>(no change, or a user-agent inherited style)</td>
+                <td class="code">html {<br><span class="css-tab"></span>background-color: cyan;<br>}</td>
+                <td>(page will have a cyan background unless overridden by a more specific rule.</td>
+            </tr>
+            <tr>
+                <td>class</td>
+                <td class="code">&lt;div class="square"&gt;&lt;/div&gt;</td>
+                <td>(not visible since the content is empty)</td>
+                <td class="code">.square{<br><span class="css-tab"></span>background-color: green;<br><span class="css-tab"></span>height: 20px;<br><span class="css-tab"></span>width: 20px;<br>}</td>
+                <td><div class="example-square"></div>(The normally empty div is displayed as a square object)</td>
+            </tr>
+            <tr>
+                <td>id</td>
+                <td class="code">&lt;p id="red-me"&gt;This text is red.&lt;/p&gt;</td>
+                <td><p>This text is red.</p>(default text color)</td>
+                <td class="code">#red-me{<br><span class="css-tab"></span>color: red;<br>}</td>
+                <td><p id="example-red-me">This text is red.</p>(text color is altered <em>for this p only</em>)</td>
+            </tr>
+        </table>
     </div>
     <footer><p>Contact the WebMistress at: <a href="mailto:amber.z.shifflett@outlook.com">amber.z.shifflett@outlook.com</a></p></footer>
 </body>

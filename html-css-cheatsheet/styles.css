@@ -76,6 +76,7 @@ header h1 {
     font-family: monospace;
     color: greenyellow;
     background-color: rgb(139, 139, 139);
+    text-align: left;
 }
 
 nav {
@@ -111,6 +112,20 @@ nav a:active {
     border: 8px groove goldenrod;
     background-color: antiquewhite;
     padding: 7px 15px;
+}
+
+.css-tab {
+    padding: 1em;
+}
+
+.example-square{
+    background-color: green;
+    height: 20px;
+    width: 20px;
+}
+
+#example-red-me{
+    color: red;
 }
 
 footer {
