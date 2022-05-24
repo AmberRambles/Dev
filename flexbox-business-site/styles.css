@@ -1,6 +1,23 @@
+html {
+    background-color: rgb(241, 183, 116);
+}
+
+body {
+    margin: 0 10%;
+}
+
 header, footer {
     display: flex;
     justify-content: space-between;
+}
+
+.logo {
+    border: 6px solid rgb(39, 151, 39);
+    border-radius: 10px;
+    background-color: rgb(61, 240, 61);
+    font-family: 'Arial Narrow Bold', sans-serif;
+    padding: 0 10px;
+    margin-bottom: 10px;
 }
 
 nav ul {
@@ -12,15 +29,19 @@ nav a {
     text-decoration: none;
     cursor: pointer;
     padding: 5px;
-    border: 2px solid blue;
+    border: 6px solid rgb(39, 151, 39);
     border-radius: 7px;
-    color: blue;
-    background-color: white;
+    color: white;
+    background-color: rgb(61, 240, 61);
+}
+
+#schedule-nav a {
+    box-shadow: 0 0 10px 10px lightsteelblue;
 }
 
 nav li::after {
-    content: ">";
-    color: blue;
+    content: "-";
+    color: black;
     padding: 0.5rem;
 }
 
@@ -37,3 +58,25 @@ nav a:active {
     color: red;
     background-color: aquamarine;
 }
+
+.big-photo {
+    margin: 0 auto;
+    height: 700px;
+    overflow: hidden;
+    background-image: url('./images/benjamin-lehman-qwIeh5M8bF8-unsplash.jpg');
+    background-size: cover;
+    display: flex;
+    justify-items: center;
+}
+
+.slogan {
+    font-family: Sacramento, cursive, serif;
+    font-size: 70px;
+    font-weight: 500;
+    color: rgb(165, 88, 152);
+    text-justify: left;
+    text-shadow: 1px 1px 3px black;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
