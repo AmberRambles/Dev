@@ -1,0 +1,39 @@
+header, footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    cursor: pointer;
+    padding: 5px;
+    border: 2px solid blue;
+    border-radius: 7px;
+    color: blue;
+    background-color: white;
+}
+
+nav li::after {
+    content: ">";
+    color: blue;
+    padding: 0.5rem;
+}
+
+nav li:last-child::after {
+    display: none;
+}
+
+nav a:hover {
+    background-color: blue;
+    color: white;
+}
+
+nav a:active {
+    color: red;
+    background-color: aquamarine;
+}
