@@ -1,5 +1,6 @@
 html {
     background-color: rgb(241, 183, 116);
+    font-size: 18px;
 }
 
 body {
@@ -17,12 +18,14 @@ header, footer {
     background-color: rgb(61, 240, 61);
     font-family: 'Arial Narrow Bold', sans-serif;
     padding: 0 10px;
+    margin-top: 1rem;
     margin-bottom: 10px;
 }
 
 nav ul {
     display: flex;
     list-style: none;
+    margin-top: 2rem;
 }
 
 nav a {
@@ -31,7 +34,8 @@ nav a {
     padding: 5px;
     border: 6px solid rgb(39, 151, 39);
     border-radius: 7px;
-    color: white;
+    color: rgb(165, 88, 152);
+    font-size: 1.2rem;
     background-color: rgb(61, 240, 61);
 }
 
@@ -61,10 +65,11 @@ nav a:active {
 
 .big-photo {
     margin: 0 auto;
-    height: 700px;
+    height: 1000px;
     overflow: hidden;
     background-image: url('./images/benjamin-lehman-qwIeh5M8bF8-unsplash.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     justify-items: center;
 }
@@ -76,7 +81,41 @@ nav a:active {
     color: rgb(165, 88, 152);
     text-justify: left;
     text-shadow: 1px 1px 3px black;
-    margin-top: 20px;
+    margin-top: 70px;
     margin-left: 50px;
 }
 
+.mission{
+    font-family: 'Hepta Slab', serif;
+}
+
+.mission h2 {
+    font-size: 2.5rem;
+}
+
+.mission ul {
+    list-style: inside none;
+    padding-inline-start: 0;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.mission li {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    overflow: hidden;
+    height: 500px;
+    margin-bottom: 5px;
+    background-size: cover;
+}
+
+.mission h3 {
+    margin: 0;
+    text-align: center;
+}
+
+#clean {
+    background-image: url("./images/boney-dHIRbh9En6I-unsplash.jpg");
+}
