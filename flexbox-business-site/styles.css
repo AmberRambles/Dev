@@ -90,32 +90,73 @@ nav a:active {
 }
 
 .mission h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
+    text-align: center;
 }
 
 .mission ul {
     list-style: inside none;
     padding-inline-start: 0;
-    font-size: 2rem;
+    font-size: 2.5rem;
     display: flex;
     flex-direction: column;
 }
 
 .mission li {
     display: flex;
-    align-items: center;
-    justify-items: center;
+    align-items: flex-end;
+    justify-content: center;
     overflow: hidden;
-    height: 500px;
-    margin-bottom: 5px;
+    height: 1000px;
+    min-width: 700px;
+    margin-bottom: 0.25rem;
     background-size: cover;
+    background-position: center;
+    border: 1px solid rgb(39, 151, 39);
 }
 
 .mission h3 {
     margin: 0;
     text-align: center;
+    color: rgb(165, 88, 152);
+    position: relative;
+    bottom: 20%;
+    background-color: rgba(61, 240, 61, 0.7);
+    border-radius: 5px;
 }
 
 #clean {
     background-image: url("./images/boney-dHIRbh9En6I-unsplash.jpg");
+}
+
+#size {background-image: url("./images/reba-spike-nAedTCXPdeg-unsplash.jpg");}
+
+#breed {background-image: url("./images/autri-taheri-TTGSZSElkOI-unsplash.jpg");}
+
+#radio {background-image: url("./images/krys-amon-ttv1pX6tk7o-unsplash.jpg");}
+
+#dj {background-image: url("./images/muhammadh-saamy-GO1i2timuug-unsplash.jpg");}
+
+/*
+.crew {
+    font-family: ;
+    font-size: ;
+}
+*/
+.crew-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+    overflow: hidden;
+}
+
+.crew-member {
+    height: 500px;
+    min-width: 400px;
+    border: 1px solid black;
+}
+
+.crew-member img {
+    height: 90%;
+    width: 90%;
 }
