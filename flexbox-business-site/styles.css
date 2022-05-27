@@ -34,7 +34,7 @@ nav a {
     padding: 5px;
     border: 6px solid rgb(39, 151, 39);
     border-radius: 7px;
-    color: rgb(165, 88, 152);
+    color: rgb(128, 67, 117);
     font-size: 1.2rem;
     background-color: rgb(61, 240, 61);
 }
@@ -112,7 +112,8 @@ nav a:active {
     margin-bottom: 0.25rem;
     background-size: cover;
     background-position: center;
-    border: 1px solid rgb(39, 151, 39);
+    border: 4px solid rgb(39, 151, 39);
+    border-radius: 7px;
 }
 
 .mission h3 {
@@ -125,15 +126,24 @@ nav a:active {
     border-radius: 5px;
 }
 
+.col-box {
+    display: flex;
+    flex-direction: row;
+}
+
 #clean {
     background-image: url("./images/boney-dHIRbh9En6I-unsplash.jpg");
 }
 
-#size {background-image: url("./images/reba-spike-nAedTCXPdeg-unsplash.jpg");}
+#size {
+    background-image: url("./images/reba-spike-nAedTCXPdeg-unsplash.jpg");
+    width: 50%;
+}
 
-#breed {background-image: url("./images/autri-taheri-TTGSZSElkOI-unsplash.jpg");}
-
-#radio {background-image: url("./images/krys-amon-ttv1pX6tk7o-unsplash.jpg");}
+#breed {
+    background-image: url("./images/autri-taheri-TTGSZSElkOI-unsplash.jpg");
+    width: 50%;
+}
 
 #dj {background-image: url("./images/muhammadh-saamy-GO1i2timuug-unsplash.jpg");}
 
@@ -145,18 +155,29 @@ nav a:active {
 */
 .crew-box {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 0.25rem;
     overflow: hidden;
+    background-color: rgba(39, 151, 39, 0.7);
 }
 
 .crew-member {
-    height: 500px;
-    min-width: 400px;
+    height: 600px;
+    min-width: 100px;
+    max-width: 300px;
     border: 1px solid black;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(61, 240, 61, 0.5);
 }
 
 .crew-member img {
-    height: 90%;
-    width: 90%;
+    height: 400px;
+    min-width: 200px;
+}
+
+.crew-member p {
+    margin: 0 5%;
 }
