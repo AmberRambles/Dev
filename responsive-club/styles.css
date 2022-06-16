@@ -66,3 +66,36 @@ h2 {
     font-size: 2rem;
     margin: 1rem 0;
 }
+
+.map-box{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.map-box img{
+    width: 100%;
+}
+
+@media only screen and (min-width: 814px){
+    .mobile{
+        display: none;
+    }
+    .flex-slide-box{
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 813px) {
+    .flex-slide-box{
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+
+    .mobile img{
+        height: 100%;
+        width: 100%;
+    }
+}
