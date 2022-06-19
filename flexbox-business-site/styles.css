@@ -72,6 +72,7 @@ nav a:active {
     background-repeat: no-repeat;
     display: flex;
     justify-items: center;
+    border: 4px solid rgb(39, 151, 39);
 }
 
 .slogan {
@@ -92,6 +93,9 @@ nav a:active {
 .mission h2 {
     font-size: 3rem;
     text-align: center;
+    border: 4px solid rgb(39, 151, 39);
+    background-color: rgb(61, 240, 61);
+    border-radius: 10px;
 }
 
 .mission ul {
@@ -129,6 +133,8 @@ nav a:active {
 .col-box {
     display: flex;
     flex-direction: row;
+    column-gap: 5px;
+    
 }
 
 #clean {
@@ -136,13 +142,19 @@ nav a:active {
 }
 
 #size {
-    background-image: url("./images/reba-spike-nAedTCXPdeg-unsplash.jpg");
-    width: 50%;
+    background-image: url("./images/victor-grabarczyk-2pbnDRhXc6Q-unsplash.jpg");
+    width: auto;
+    min-width: 400px;
+    max-width: 50%;
+    flex-grow: 1;
 }
 
 #breed {
     background-image: url("./images/autri-taheri-TTGSZSElkOI-unsplash.jpg");
-    width: 50%;
+    width: auto;
+    min-width: 400px;
+    max-width: 50%;
+    flex-grow: 1;
 }
 
 #dj {background-image: url("./images/muhammadh-saamy-GO1i2timuug-unsplash.jpg");}
