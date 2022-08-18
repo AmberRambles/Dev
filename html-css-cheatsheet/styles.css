@@ -31,16 +31,15 @@ html {
 
 body {
     background-color: rgb(211, 184, 236);
-    margin-left: 200px;
-    margin-right: 200px;
+    margin: 0 5%;
 }
 
 table {
-    margin: 5px 0px;
+    /*margin: 5px 0px;*/
     border-spacing: 0;
     line-height: 1.2;
     background-color: antiquewhite;
-    border: 18px groove goldenrod;
+    border: 9px solid goldenrod;
 }
 th{
     border: 4px dotted green;
