@@ -1,19 +1,27 @@
 * {
     font-family: Helvetica, Arial, sans-serif;
-  }
-   
-   
-  h1 {
-    color: SeaGreen;
-  }
-   
-   
-  p, 
-  li {
+    text-align: center;
+}
+  
+html {
+    background-image: url(../images/jj-ying-7JX0-bfiuxQ-unsplash.jpg);
+    background-size: contain;
+    background-repeat: repeat;
     font-size: 18px;
-  }
+}
+
+section {
+  margin: 1rem 17%;
+  border: 0.25rem solid black;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+h1 {
+    color: SeaGreen;
+    font-size: 2rem;
+    text-shadow: 2px 2px 1px rgb(29, 90, 55);
+}
    
-   
-  a {
+a {
     text-decoration: none;
-  }
+}
