@@ -35,3 +35,13 @@ nav ul li:hover {
 .menu-strip a:hover {
     opacity: 0.5;
 }
+
+#image-box {
+    width: 95%;
+    overflow: hidden;
+    display: none;
+}
+
+#imageDisplay {
+    width: 100%;
+}
