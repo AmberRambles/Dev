@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tower Control</title>
+    <style>html {
+        background: lightblue;
+        font-size: 20px;
+        font-family: Helvetica;
+      }
+      
+      h1{
+        text-align: center;
+      }
+      
+      main {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+      }
+      
+      #submit {
+        margin-top: 5px;
+        padding: 10px 20px;
+      }</style>
+    <script>function pwdTest () {
+        let password = document.getElementById("password").value;
+        if (password == "Lyoko"){
+          document.documentElement.innerHTML = `<h1>Success!</h1>`;
+          document.documentElement.style = "background:green;";
+        }
+        else {
+          document.documentElement.style = "background:red;";
+        alert("Incorrect");
+        }
+      }</script>
+</head>
+<body>
+    <h1>Tower Control</h1>
+  <main>
+    <label for="name">User: </label>
+    <input id="name" value="Aelita" disabled />
+    <br>
+    <label for="password">Code: </label>
+    <input id="password" type="password" name="password"/>
+    <br>
+    <button onclick="pwdTest()" id="submit">Submit</button>
+  </main>
+</body>
+</html>
