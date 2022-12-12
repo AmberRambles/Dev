@@ -4,7 +4,7 @@ public class Card {
 //declare and define attributes with default values
     private byte index = 53;
     private String visualValue = "UNINITIALIZED_VALUE";
-    private byte scoringValue = 0;
+    private int scoringValue = 0;
     private String suit = "UNINITIALIZED_SUIT";
     private String color = "UNINITIALIZED_COLOR";
 //GET Methods
@@ -14,7 +14,7 @@ public class Card {
     public String getVisualValue() {
         return visualValue;
     }
-    public byte getScoringValue() {
+    public int getScoringValue() {
         return scoringValue;
     }
     public String getSuit() {
@@ -30,7 +30,7 @@ public class Card {
     public void setVisualValue (String inputVisualValue){
         visualValue = inputVisualValue;
     }
-    public void setScoringValue (byte inputScoringValue){
+    public void setScoringValue (int inputScoringValue){
         scoringValue = inputScoringValue;
     }
     public void setSuit (String inputSuit){
@@ -38,6 +38,20 @@ public class Card {
     }
     public void setColor (String inputColor){
         color = inputColor;
+    }
+//PRINT Methods
+    public void printCardInfo(){
+        System.out.print("Index: ");
+        System.out.println(String.valueOf(getIndex()));
+        System.out.print("Color: ");
+        System.out.println(getColor());
+        System.out.print("Suit: ");
+        System.out.println(getSuit());
+        System.out.print("Visual Value: ");
+        System.out.println(getVisualValue());
+        System.out.print("Scoring Value: ");
+        System.out.println(String.valueOf(getScoringValue()));
+        System.out.println("");
     }
 //CONSTRUCTOR Methods
     public Card(){
@@ -49,7 +63,7 @@ public class Card {
         suit = inputSuit;
         color = inputColor;
     }
-    public Card(byte inputIndex, String inputVisualValue, byte inputScoringValue, String inputSuit, String inputColor){
+    public Card(byte inputIndex, String inputVisualValue, int inputScoringValue, String inputSuit, String inputColor){
         index = inputIndex;
         visualValue = inputVisualValue;
         scoringValue = inputScoringValue;
