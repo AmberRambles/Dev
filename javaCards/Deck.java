@@ -9,6 +9,59 @@ public class Deck {
     private String[] availableColors = {"Red", "Black"};
     private String[] availableVisualValues = {"Ace", "Two", "Three", "Four", "Five", "Six",
     "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King"};
+    //Methods
+    
+    public void setBlackJackScoring(){
+        int scoringValue;
+        for (byte mainLoop = 0; mainLoop < maxCards; mainLoop++){
+            switch (deck[mainLoop].getVisualValue()){
+                case "Ace":
+                    scoringValue = 1;
+                    break;
+                case "Two":
+                    scoringValue = 2;
+                    break;
+                case "Three":
+                    scoringValue = 3;
+                    break;
+                case "Four":
+                    scoringValue = 4;
+                    break;
+                case "Five":
+                    scoringValue = 5;
+                    break;
+                case "Six":
+                    scoringValue = 6;
+                    break;
+                case "Seven":
+                    scoringValue = 7;
+                    break;
+                case "Eight":
+                    scoringValue = 8;
+                    break;
+                case "Nine":
+                    scoringValue = 9;
+                    break;
+                case "Ten":
+                    scoringValue = 10;
+                    break;
+                case "Jack":
+                    scoringValue = 10;
+                    break;
+                case "Queen":
+                    scoringValue = 10;
+                    break;
+                case "King":
+                    scoringValue = 10;
+                    break;
+                default:
+                    scoringValue = -1;
+                    break;
+            }
+            deck[mainLoop].setScoringValue(scoringValue);
+        }
+    }
+    
     //Constructor
     public Deck() {
         byte suitCounter = 0;
@@ -19,6 +72,8 @@ public class Deck {
             String creationVisualValue = "";
             String creationSuit = "";
             String creationColor = "";
+            String creationLocation = "Deck";
+            int creationLocationPosition = creationIndex;
             if(suitCounter < availableSuits.length){ creationSuit = availableSuits[suitCounter]; }
             else { System.out.println("suitCounter Error"); }
 
@@ -45,7 +100,7 @@ public class Deck {
                 System.out.println(creationColor);
             }
             deck[mainLoop] = new Card(creationIndex, creationVisualValue, creationSuit, 
-            creationColor);
+            creationColor, creationLocation, creationLocationPosition);
 
             
             visualValueCounter++;
