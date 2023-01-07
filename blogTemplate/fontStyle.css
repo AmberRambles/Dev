@@ -1,0 +1,42 @@
+@font-face {
+    font-family: "Nightfall";
+    src: url(./fonts/Nightfall.ttf) format('truetype');
+}
+@font-face {
+    font-family: "Nightfall";
+    src: url(./fonts/Nightfall.otf);
+}
+
+@font-face {
+    font-family: "Flatface Haleys";
+    src: url(./fonts/FlatfaceHaleys-Sans.otf);
+}
+
+@font-face {
+    font-family: "Bitter";
+    src: url(./fonts/Bitter-VariableFont_wght.ttf);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Bitter";
+    src: url(./fonts/Bitter-Italic-VariableFont_wght.ttf);
+    font-style: italic;
+}
+
+html{
+    font-size: 30px;
+}
+
+.nightfall{
+    font-family: "Nightfall";
+    font-weight: 700;
+}
+
+.flatfacehaleys{
+    font-family: "Flatface Haleys";
+}
+
+.bitter{
+    font-family: "Bitter";
+}

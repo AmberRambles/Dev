@@ -1,0 +1,23 @@
+html{
+    background-color: rgb(20, 20, 20);
+    color: rgb(64, 90, 64);
+    margin: 0 20%;
+}
+
+h1{
+    font-family: "Nightfall";
+    font-weight: 600;
+}
+
+h2{
+    font-family: "Flatface Haleys";
+    font-weight: 400;
+}
+
+p{
+    font-family: "Bitter";
+}
+
+article{
+    border-bottom: 2px dotted rgb(40,50,40);
+}
