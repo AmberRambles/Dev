@@ -1,5 +1,7 @@
 package javaCards;
 
+import java.util.Random;
+
 public class Deck {
     //Properties
     private boolean DEBUG = false;
@@ -10,7 +12,12 @@ public class Deck {
     private String[] availableVisualValues = {"Ace", "Two", "Three", "Four", "Five", "Six",
     "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King"};
     //Methods
-    
+    public void shuffle () {
+        Random random = new Random();
+        int[] newCardPositions = new int[maxCards];
+        
+    }
+
     public void setBlackJackScoring(){
         int scoringValue;
         for (byte mainLoop = 0; mainLoop < maxCards; mainLoop++){

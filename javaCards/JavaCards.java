@@ -5,7 +5,7 @@ public class JavaCards {
         System.out.println("Beginning of JavaCards.");
 
         Deck testDeck = new Deck();
-        testDeck.setBlackJackScoring();//aces not properly handled!!
+        
         for(int i = 0; i < 52; i++){ //this loop demonstrates that the deck is full and accurate
             testDeck.deck[i].printCardInfo();
         }
