@@ -15,7 +15,38 @@ public class Deck {
     public void shuffle () {
         Random random = new Random();
         int[] newCardPositions = new int[maxCards];
-        
+        for (int i = 0; i < maxCards; i++){
+            //initilize array members to invalid values that will be overwritten
+            newCardPositions[i] = -1;
+        }
+        for (int i = 0; i < maxCards; i++){
+            int nextRandom = -1; //initialize to invalid value, will be overwritten
+            nextRandom = random.nextInt(maxCards); //random number generated from 0 through maxCards-1 (so 0-51 for this 52 card deck)
+            if (i == 0){  //no possibility for duplicate, so the value is written to the array
+                newCardPositions[i] = nextRandom;
+            }
+            else {
+                boolean duplicateChecking = true;
+                while (duplicateChecking == true){
+                    boolean newRandNeeded = false;
+                    for (int j = 0; j <= i; j++){  //should loop through the filled parts of the array checking if this random is a duplicate
+                        if (nextRandom == newCardPositions[j]){
+                            newRandNeeded = true;
+                        }
+                    }
+                    if (newRandNeeded == true) {
+                        nextRandom = random.nextInt(maxCards); //random number generated
+                    }
+                    else {
+                        newCardPositions[i] = nextRandom; //insert into the array at i
+                        duplicateChecking = false; //break checking loop for this i value insertion
+                    }
+                }
+            }
+        }
+        for (int i = 0; i < maxCards; i++){
+            deck[i].setLocationPosition(newCardPositions[i]);
+        } 
     }
 
     public void setBlackJackScoring(){
