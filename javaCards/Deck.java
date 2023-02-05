@@ -1,22 +1,20 @@
-package javaCards;
-
 import java.util.Random;
 
 public class Deck {
     //Properties
     private boolean DEBUG = false;
-    private byte maxCards = 52;
+    public byte maxCards = 52;
     public Card[] deck = new Card[maxCards];
-    private String[] availableSuits = {"Hearts", "Clubs", "Spades", "Diamonds"};
-    private String[] availableColors = {"Red", "Black"};
-    private String[] availableVisualValues = {"Ace", "Two", "Three", "Four", "Five", "Six",
+    public String[] availableSuits = {"Hearts", "Clubs", "Spades", "Diamonds"};
+    public String[] availableColors = {"Red", "Black"};
+    public String[] availableVisualValues = {"Ace", "Two", "Three", "Four", "Five", "Six",
     "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King"};
     //Methods
     public void shuffle () {
         Random random = new Random();
         int[] newCardPositions = new int[maxCards];
         for (int i = 0; i < maxCards; i++){
-            //initilize array members to invalid values that will be overwritten
+            //initialize array members to invalid values that will be overwritten
             newCardPositions[i] = -1;
         }
         for (int i = 0; i < maxCards; i++){

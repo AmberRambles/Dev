@@ -1,5 +1,3 @@
-package javaCards;
-
 public class Card {
 //declare and define attributes with default values
     private byte index = 53; //default to invalid value for 52 card deck
