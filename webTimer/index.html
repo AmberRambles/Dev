@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function countdown(){
+            let timeLeft = document.getElementById("inputTime").innerHTML;
+            let outputElement = document.getElementById("outputBox");
+            outputElement.innerHTML = timeLeft;
+            console.log(timeLeft);
+        }
+        console.log("Page loaded.");
+    </script>
+    <title>Timer</title>
+</head>
+<body>
+    <header><h1>Timer</h1></header>
+    <main>
+        <label for="inputTime">Enter a time in seconds.</label>
+        <input type="number" name="inputTime" id="inputTime" min="1" step="5">
+        <button onclick="countdown()">Countdown!</button>
+        <br>
+        <output id="outputBox"></output>
+    </main>
+</body>
+</html>
