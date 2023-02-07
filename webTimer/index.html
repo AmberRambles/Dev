@@ -4,9 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		html{
+			background-color: antiquewhite;
+			font-size: 20px;
+		}
+	</style>
     <script>
         function countdown(){
-            let timeLeft = document.getElementById("inputTime").innerHTML;
+            let timeLeft = document.getElementById("inputTime").value;
             let outputElement = document.getElementById("outputBox");
             outputElement.innerHTML = timeLeft;
             console.log(timeLeft);
@@ -18,7 +24,7 @@
 <body>
     <header><h1>Timer</h1></header>
     <main>
-        <label for="inputTime">Enter a time in seconds.</label>
+        <label for="inputTime">Enter a time in seconds:</label>
         <input type="number" name="inputTime" id="inputTime" min="1" step="5">
         <button onclick="countdown()">Countdown!</button>
         <br>
