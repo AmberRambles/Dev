@@ -12,12 +12,12 @@
 	</style>
     <script>
         function countdown(){
+			const outputElement = document.getElementById("outputBox");
             let timeLeft = document.getElementById("inputTime").value;
-            let outputElement = document.getElementById("outputBox");
-            outputElement.innerHTML = timeLeft;
-            console.log(timeLeft);
+			timeLeft = parseInt(timeLeft, 10);
+			outputElement.innerHTML = timeLeft;
+			//console.log(typeof timeLeft);
         }
-        console.log("Page loaded.");
     </script>
     <title>Timer</title>
 </head>
