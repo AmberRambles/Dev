@@ -13,11 +13,30 @@
     <script>
         function countdown(){
 			const outputElement = document.getElementById("outputBox");
+			var alertSound = new Audio();
+			alertSound.src = "./resources/Alert.wav";
             let timeLeft = document.getElementById("inputTime").value;
 			timeLeft = parseInt(timeLeft, 10);
 			outputElement.innerHTML = timeLeft;
-			//console.log(typeof timeLeft);
+			function tick(){
+				//console.log("Tick");
+				if (timeLeft == 0) {
+					//console.log("Timer complete.")
+					alertSound.play();
+					alert("Time is up!");
+				}
+				else {
+					//console.log("Time before update: " + timeLeft);
+					timeLeft -= 1;
+					//console.log("Time after update: " + timeLeft);
+					outputElement.innerHTML = timeLeft;
+					//console.log("Updates complete, scheduling next tick.")
+					setTimeout(tick, 1000);
+				}
+			}
+			setTimeout(tick, 100);
         }
+		//console.log("Page Loaded.");
     </script>
     <title>Timer</title>
 </head>
