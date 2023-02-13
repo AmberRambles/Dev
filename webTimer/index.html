@@ -7,7 +7,15 @@
 	<style>
 		html{
 			background-color: antiquewhite;
-			font-size: 20px;
+			font-size: 30px;
+			text-align: center;
+		}
+		header h1{
+			margin-top: 1rem;
+			margin-bottom: 1.5rem;
+		}
+		#inputDiv{
+			margin-bottom: 2rem;
 		}
 	</style>
     <script>
@@ -23,7 +31,11 @@
 				if (timeLeft == 0) {
 					//console.log("Timer complete.")
 					alertSound.play();
-					alert("Time is up!");
+					outputElement.innerHTML = "Time is Up!";
+					function alertFunct() {
+						alert("Time is up!");
+					}
+					setTimeout(alertFunct, 10);
 				}
 				else {
 					//console.log("Time before update: " + timeLeft);
@@ -36,18 +48,26 @@
 			}
 			setTimeout(tick, 100);
         }
+	/*	document.getElementById("inputTime").addEventListener("keydown", function (event) {
+			console.log(`Key ${event.UIEvent.KeyboardEvent.key} pressed`);
+			if(event.UIEvent.KeyboardEvent.key === "Enter"){
+				event.preventDefault();
+			document.getElementById("countDownBttn").click();
+			}
+		});*/
 		//console.log("Page Loaded.");
     </script>
-    <title>Timer</title>
+    <title>Amber's Web Timer</title>
 </head>
 <body>
-    <header><h1>Timer</h1></header>
+    <header><h1>Amber's Web Timer</h1></header>
     <main>
-        <label for="inputTime">Enter a time in seconds:</label>
-        <input type="number" name="inputTime" id="inputTime" min="1" step="5">
-        <button onclick="countdown()">Countdown!</button>
-        <br>
-        <output id="outputBox"></output>
+		<div id="inputDiv">
+        	<label for="inputTime">Enter a time in seconds:</label>
+        	<input type="number" name="inputTime" id="inputTime" min="1" step="5">
+        	<button id="countDownBttn" onclick="countdown()">Countdown!</button>
+        </div>
+        <output id="outputBox">#</output>
     </main>
 </body>
 </html>
