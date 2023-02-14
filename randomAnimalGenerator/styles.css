@@ -1,5 +1,5 @@
 html{
-	font-size: 20px;
+	font-size: 40px;
 	margin: 0 10%;
 	background-color: rgb(250, 173, 90);
 	color: darkgreen;
@@ -10,7 +10,7 @@ main{
 }
 
 main h2{
-	font-size: 2rem;
+	font-size: 1rem;
 }
 
 header{
@@ -20,17 +20,18 @@ header{
 header h1{
 	display: inline-block;
 	margin: auto;
+	font-size: 1.5rem;
 }
 
 footer{
 	text-align: right;
-	position: absolute;
+	position: relative;
 	bottom: 0;
 	right: 5%;
 }
 
 .arrow{
-	font-size: 3rem;
+	font-size: 1.5rem;
 }
 
 #generate{
@@ -38,9 +39,19 @@ footer{
 	border-radius: 4px;
 	color: blue;
 	background-color: rgb(250, 250, 250);
-	font-size: 1.5rem;
+	font-size: 1rem;
 }
 
 #resultsContainer{
 	display: none;
+	align-items: center;
+	justify-content: center;
+}
+
+#result{
+	font-size: 1.5rem;
+}
+
+#resultImage{
+	width: 100%;
 }
