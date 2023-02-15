@@ -69,6 +69,28 @@ function add () {
         listItem.name = inputItem;
         listLabel.setAttribute("for", newId);
         listLabel.innerHTML = inputItem;
+		listItem.addEventListener('change', function() {
+	if(this.checked){
+		//console.log("Check");
+		let target = document.getElementById("haveDones");
+		let one = this;
+		let two = one.nextSibling;
+		let three = two.nextSibling;
+		target.appendChild(one);
+		target.appendChild(two);
+		target.appendChild(three);
+	}
+	else{
+		//console.log("Uncheck");
+		let target = document.getElementById("toDos");
+		let one = this;
+		let two = one.nextSibling;
+		let three = two.nextSibling;
+		target.appendChild(one);
+		target.appendChild(two);
+		target.appendChild(three);
+	}
+});
         document.getElementById("toDos").appendChild(listItem);
         document.getElementById("toDos").appendChild(listLabel);
         let newBreak = document.createElement("br");
