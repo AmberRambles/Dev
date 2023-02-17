@@ -47,6 +47,26 @@ public class Deck {
         } 
     }
 
+    public void printDeck(){
+        for(byte j = 0; j < maxCards; j++){
+            deck[j].printCardInfo();
+        }
+    }
+
+    public byte getTopCard (String locationName){
+        int highestPosition = -1;
+        byte highestPositionIndex = -1;
+        for (byte functionIndex = 0; functionIndex < maxCards; functionIndex++){
+            if(deck[functionIndex].getLocation() == locationName){
+                if(deck[functionIndex].getLocationPosition() > highestPosition){
+                    highestPosition = deck[functionIndex].getLocationPosition();
+                    highestPositionIndex = functionIndex;
+                }
+            }
+        }
+        return highestPositionIndex;
+    }
+    
     public void setBlackJackScoring(){
         int scoringValue;
         for (byte mainLoop = 0; mainLoop < maxCards; mainLoop++){

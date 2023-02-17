@@ -7,6 +7,7 @@ public class Card {
     private String color = "UNINITIALIZED_COLOR";
     private String location = "UNINITIALIZED_LOCATION";
     private int locationPosition = -1; //default to invalid position in stack, normal flow is 0 = bottom and greatest value is the top of stack
+    private boolean isFaceUp = false;
 //GET Methods
     public byte getIndex() {
         return index;
@@ -29,6 +30,7 @@ public class Card {
     public int getLocationPosition(){
         return locationPosition;
     }
+    public boolean getIsFaceUp(){ return isFaceUp; }
 //SET Methods
     public void setIndex (byte inputIndex){
         index = inputIndex;
@@ -51,6 +53,7 @@ public class Card {
     public void setLocationPosition (int inputLocationPosition){
         locationPosition = inputLocationPosition;
     }
+    public void setIsFaceUp (boolean inputIsFaceUp) { isFaceUp = inputIsFaceUp; }
 //PRINT Methods
     public void printCardInfo(){
         System.out.print("Index: ");
@@ -67,6 +70,8 @@ public class Card {
         System.out.println(getLocation());
         System.out.print("Location Position: ");
         System.out.println(String.valueOf(getLocationPosition()));
+        System.out.print("isFaceUp: ");
+        System.out.println(String.valueOf(getIsFaceUp()));
         System.out.println("");
     }
 //CONSTRUCTOR Methods
