@@ -1,0 +1,30 @@
+html{
+	font-size: 20px;
+}
+body{
+	margin: 0 10%;
+	background-color: cornsilk;
+}
+header{
+	text-align: center;
+	font-family: 'Caveat', cursive;
+}
+label{
+	font-family: 'Roboto Slab', serif;
+}
+footer{
+	text-align: right;
+}
+
+
+#textInput{
+	height: 1.5rem;
+	width: 70%;
+}
+#addButton{
+	border: none;
+	height: 1.5rem;
+	width: 50px;
+	color: blue;
+	background-color: rgb(200, 200, 200);
+}
