@@ -9,6 +9,7 @@ header{
 	text-align: center;
 	font-family: 'Caveat', cursive;
 }
+header h1{ font-size: 3rem;}
 label{
 	font-family: 'Roboto Slab', serif;
 }
@@ -16,15 +17,18 @@ footer{
 	text-align: right;
 }
 
+input[type=button]{
+	border: none;
+	color: blue;
+	background-color: rgb(200, 200, 200);
+}
 
 #textInput{
 	height: 1.5rem;
 	width: 70%;
 }
+
 #addButton{
-	border: none;
 	height: 1.5rem;
 	width: 50px;
-	color: blue;
-	background-color: rgb(200, 200, 200);
 }
