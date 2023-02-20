@@ -64,7 +64,7 @@ public class Deck {
                 }
             }
         }
-        return highestPositionIndex;
+        return highestPositionIndex; //returns -1 if no cards in this pile
     }
     
     public void setBlackJackScoring(){

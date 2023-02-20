@@ -3,9 +3,5 @@ public class JavaCards {
         System.out.println("Beginning of JavaCards.");
 
         Solitaire testSolitaire = new Solitaire();
-        
-
-
-
     }
 }
