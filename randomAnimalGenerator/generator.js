@@ -13,4 +13,6 @@ function generate(){
 	document.getElementById("resultImage").setAttribute("src", hrefArray[index]);
 	document.getElementById("resultsContainer").style.display = "flex";
 	document.getElementById("generate").innerHTML = "Again";
+	let top = document.getElementById("generatorTop");
+	setTimeout(function (){top.scrollIntoView();}, 500)
 }
