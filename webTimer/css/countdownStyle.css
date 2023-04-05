@@ -10,3 +10,7 @@ header h1{
 #inputDiv{
     margin-bottom: 2rem;
 }
+footer{
+    postion: sticky;
+    bottom: 0px;
+}
