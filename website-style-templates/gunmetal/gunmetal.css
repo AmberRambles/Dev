@@ -1,0 +1,26 @@
+html{
+    background-color: #111;
+    color: #888;
+}
+
+header h1{
+    display: inline-block;
+    text-align: center;
+}
+
+nav{
+    display: inline-block;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+}
+nav ul li a{
+    text-shadow: #AAA 1px 1px 1px;
+    padding: 3px;
+    color: #888;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    text-shadow: none;
+}
