@@ -1,13 +1,18 @@
 html{
     background-color: #111;
     color: #888;
+	font-family: 'Playfair Display', serif;
+	font-size: 20px;
 }
-
+header{
+	display: flex;
+	justify-content: space-between;
+}
 header h1{
     display: inline-block;
     text-align: center;
+	font-size: 2.25rem;
 }
-
 nav{
     display: inline-block;
 }
@@ -16,11 +21,21 @@ nav ul{
     display: flex;
 }
 nav ul li a{
-    text-shadow: #AAA 1px 1px 1px;
+	margin-right: 4px;
+	border: 1px solid #888;
+	border-radius: 2px;
     padding: 3px;
     color: #888;
     text-decoration: none;
 }
-nav ul li a:hover{
-    text-shadow: none;
+main h2{
+	font-size: 1.5rem;
+}
+main ul{
+	border: 2px dotted #888;
+	border-radius: 2px;
+}
+footer{
+	position: absolute;
+	bottom: 1%;
 }
